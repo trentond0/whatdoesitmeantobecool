@@ -11,15 +11,27 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: Helvetica, sans-serif;
         }
 
-        img {
-            max-width: 50%;
-            height: auto;
+        #logoText {
+            font-weight: bold;
+            font-size: 3vw; /* Adjust the percentage as needed */
+            color: black; /* Default text color */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+            }
+
+            #logoText {
+                color: white;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="images/wdimtbc.png" alt="wdimtbc logo">
+    <div id="logoText">what does it mean to be cool?</div>
 </body>
 </html>
