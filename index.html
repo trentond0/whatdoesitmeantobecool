@@ -7,31 +7,70 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
             font-family: Helvetica, sans-serif;
         }
 
-        #logoText {
+        .logo {
             font-weight: bold;
-            font-size: 3vw; /* Adjust the percentage as needed */
-            color: black; /* Default text color */
+            font-size: 5vw; /* Adjust the percentage as needed */
+            margin-bottom: 1%; /* Adjust the margin value as needed */
+        }
+
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1%; /* Adjust the margin value as needed */
+            width: 20%; /* Adjust the width of the container */
+        }
+
+        .social-media-links a {
+            margin: 0 7.5%; /* Adjust the margin value as needed */
+            flex: 1; /* Distribute available space equally among links */
+        }
+
+        .social-media-links a img {
+            max-width: 100%;
+            height: auto;
         }
 
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: black;
+                color: white;
             }
 
-            #logoText {
-                color: white;
+            .social-media-links a {
+                filter: invert(1);
             }
         }
     </style>
 </head>
 <body>
-    <div id="logoText">what does it mean to be cool?</div>
+    <div class="logo">what does it mean to be cool?</div>
+
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://x.com/wdimtbc" target="_blank" rel="noopener noreferrer">
+            <img src="images/x.png" alt="X">
+        </a>
+        <a href="https://www.instagram.com/whatdoesitmeantobecool" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@whatdoesitmeantobecool" target="_blank" rel="noopener noreferrer">
+            <img src="images/tiktok.png" alt="TikTok">
+        </a>
+	</a>
+        <a href="https://www.youtube.com/@whatdoesitmeantobecool" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube.png" alt="YouTube">
+        </a>
+        <!-- Add more social media links as needed -->
+    </div>
 </body>
 </html>
